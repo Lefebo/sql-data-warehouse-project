@@ -1,3 +1,17 @@
+/*
+    Silver Layer Load Procedure
+    Purpose:
+        Loads cleaned, standardized, and validated data from 
+        the Bronze layer into the Silver schema. This procedure 
+        applies transformations, deduplication, type corrections, 
+        and domain standardization to ensure the data is accurate, 
+        consistent, and analytics-ready.
+
+    The Silver layer serves as the refined data foundation for 
+    the Gold/business layer. This load process guarantees that 
+    downstream dimensional models, metrics, and reporting are 
+    built on clean and trusted data.
+*/
 
 CREATE OR ALTER PROCEDURE Silver.load_silver AS
 BEGIN
