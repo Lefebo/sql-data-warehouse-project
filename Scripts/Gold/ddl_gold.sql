@@ -1,7 +1,12 @@
 /*
-Gold Fact Sales Table:
-This Fact sales table do have those measureable quatities such as sales_amount, price and 
-any thing related to tracnsaction
+Gold Layer (Business-Ready Data) 
+
+The Gold layer contains fully refined, trusted, and business-ready datasets that are optimized for analytics, reporting, and downstream applications.
+Data in this layer is aggregated, enriched, conformed, and standardized according to business logic.
+Gold tables represent final KPIs, dashboards, metrics, and domain-level data products used directly by analysts, BI tools, and machine learning models.
+In our Model, we have two dimension table (Product and Customer) and one fact table (sales).
+The fact sales table contain the measurable values such as price, sales amount and quantity. The dimension table used to explain in details about the customer 
+in dim_Customer table and describe in details about the product in dim_product table.
 */
 
 Create view gold.fact_sales as 
