@@ -1,4 +1,5 @@
 **SQL Server Data Warehouse Project**
+
 **Project Overview**
 
 This project focuses on the design and development of a modern Data Warehouse using SQL Server. The goal is to consolidate sales and operational data from multiple source systems into a structured, high-performance data warehouse optimized for analytical reporting and business intelligence.
