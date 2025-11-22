@@ -1,5 +1,16 @@
 /*
-Procedure used to load the full load into our databases
+Procedure: bronze.load_bronze
+Purpose:
+        Performs a full raw data ingestion into the Bronze layer.
+        Loads CRM and ERP datasets from source CSV files into the Bronze schema.
+        Ensures clean landing via table truncation and BULK INSERT operations.
+        Measures and logs load durations for monitoring.
+        Includes error handling for safe execution.
+
+    The Bronze layer represents the raw zone of the data warehouse,
+    where source data is ingested exactly as received—without 
+    transformations or business rules. This layer serves as the 
+    foundation for downstream Silver (cleaned) and Gold (curated) layers.
 */
 
 CREATE OR ALTER PROCEDURE bronze.load_bronze AS
