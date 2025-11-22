@@ -1,22 +1,51 @@
-# sql-data-warehouse-project
-Build modern data warehouse with sql server.
-Building the Data Warehouse (Data Engineering)
-Project Requirements
-Building the Data Warehouse (Data Engineering)
-Objective
-Develop a modern data warehouse using SQL Server to consolidate sales data, enabling analytical reporting and informed decision-making.
+**SQL Server Data Warehouse Project**
+**Project Overview**
 
-Specifications
-Data Sources: Import data from two source systems (ERP and CRM) provided as CSV files.
-Data Quality: Cleanse and resolve data quality issues prior to analysis.
-Integration: Combine both sources into a single, user-friendly data model designed for analytical queries.
-Scope: Focus on the latest dataset only; historization of data is not required.
-Documentation: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
-BI: Analytics & Reporting (Data Analysis)
-Objective
-Develop SQL-based analytics to deliver detailed insights into:
+This project focuses on the design and development of a modern Data Warehouse using SQL Server. The goal is to consolidate sales and operational data from multiple source systems into a structured, high-performance data warehouse optimized for analytical reporting and business intelligence.
 
-Customer Behavior
-Product Performance
-Sales Trends
-These insights empower stakeholders with key business metrics, enabling strategic decision-making.
+**Objective**
+
+Develop a robust and scalable Data Warehouse that:
+
+Integrates data from multiple source systems (ERP and CRM).
+
+Ensures high data quality and consistency.
+
+Provides a clean, unified schema for analytics and reporting.
+
+**Key Features**
+**1. Data Integration**
+
+Consolidates data from ERP and CRM systems provided as CSV files.
+
+Maps source data into standardized staging (Bronze), cleansing (Silver), and curated (Gold) layers.
+
+Resolves data quality issues such as duplicates, missing values, and inconsistent formats.
+
+**2. Schema Design**
+
+Implements a Bronze-Silver-Gold architecture:
+
+Bronze Layer: Raw, unprocessed data directly from source systems.
+
+Silver Layer: Cleaned, transformed, and integrated data.
+
+**3. Documentation & Maintenance**
+
+Provides clear documentation of database structure, schemas, and ETL procedures.
+
+Supports ongoing maintenance, version control, and scalability for future enhancements.
+
+Gold Layer: Curated tables and views ready for analytics and reporting.
+
+Supports both fact and dimension tables for structured analytics.
+
+**Technologies Used**
+
+SQL Server / T-SQL
+
+Bulk Insert / ETL Procedures
+
+Database Schema Management (Bronze, Silver, Gold layers)
+
+Data Validation and Transformation Techniques
