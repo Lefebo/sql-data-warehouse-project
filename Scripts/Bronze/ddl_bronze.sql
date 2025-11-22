@@ -1,6 +1,12 @@
 /*
-Here we create table for storing data.
-We have 6 tables each three's for CRM and ERP.
+Bronze Table Overview
+============================================
+The bronze tables are the first layer in the data pipeline. Their purpose is to capture and store raw, unprocessed data exactly 
+as it comes from the source systems such as ERP and CRM. The scripts provided here create the bronze-layer tables under the bronze 
+schema and serve as the landing zone for all incoming source data.This layer acts as the foundational storage stage in the data-
+engineering workflow. By keeping the raw data intact, the bronze layer ensures that we always have an auditable, reproducible 
+version of the source data before any cleaning, transformation, or business logic is applied. Future layers (such as silver and 
+gold) will read from these bronze tables to perform validation, enrichment, and modeling.
 /*
 
 
