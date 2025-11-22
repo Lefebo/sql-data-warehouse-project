@@ -14,6 +14,7 @@ Ensures high data quality and consistency.
 Provides a clean, unified schema for analytics and reporting.
 
 **Key Features**
+
 **1. Data Integration**
 
 Consolidates data from ERP and CRM systems provided as CSV files.
